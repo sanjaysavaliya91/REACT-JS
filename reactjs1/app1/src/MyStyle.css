@@ -1,0 +1,147 @@
+.nav-bg-color
+{
+    background-color: #3bc4ffbc;
+}
+.bgc-2
+{
+    background-color: #d1cbe4;
+}
+.bgc-3
+{
+    background-color: #d1f5ea;
+}
+.bgc-4
+{
+    background-color: #e4e3e9;
+}
+.how-work
+{
+    background-color:white;
+    border: 4px solid brown;
+    border-radius: 30px;
+}
+.card_border
+{
+    border-radius: 30px;
+    border: 4px solid brown;
+}
+
+/* Review  */
+.align-center {
+    text-align: center;
+}
+.hash-list {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px){
+    .hash-list.cols-3 > li:nth-last-child(-n+3) {
+        border-bottom: none;
+    }
+}
+@media (min-width: 768px){
+    .hash-list.cols-3 > li {
+        width: 33.3333%;
+    }
+}
+.hash-list > li {
+    display: block;
+    float: left;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.pad-30, .pad-30-all > * {
+    padding: 30px;
+}
+img {
+    border: 0;
+}
+.mgb-20, .mgb-20-all > * {
+    margin-bottom: 20px;
+}
+.wpx-100, .wpx-100-after:after {
+    width: 100px;
+}
+.img-round, .img-rel-round {
+    border-radius: 50%;
+}
+.padb-30, .padb-30-all > * {
+    padding-bottom: 30px;
+}
+
+.mgb-40, .mgb-40-all > * {
+    margin-bottom: 40px;
+}
+.align-center {
+    text-align: center;
+}
+[class*="line-b"] {
+    position: relative;
+    padding-bottom: 20px;
+    border-color: #E6AF2A;
+}
+.fg-text-d, .fg-hov-text-d:hover, .fg-active-text-d.active {
+    color: #222;
+}
+.font-cond-b {
+    font-weight: 700 !important;
+}
+/* Review  */
+
+/* resiter form  */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap);
+
+        .logo {
+            font-family: "Script MT";
+            font-size: 54px;
+            text-align: center;
+            color: #888888;
+            margin-bottom: 50px;
+        }
+
+        .logo .logo-font {
+            color: #3BC3FF;
+        }
+
+       
+
+        .header-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .login-form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .login-form .form-control {
+            border-radius: 0;
+            margin-bottom: 30px;
+        }
+
+        .login-form .form-group {
+            position: relative;
+        }
+
+        .login-form .form-group .forgot-password {
+            position: absolute;
+            top: 6px;
+            right: 15px;
+        }
+
+        .login-form .btn {
+            border-radius: 0;
+            -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .login-form .btn.btn-primary {
+            background: #3BC3FF;
+            border-color: #31c0ff;
+        }
+
+/* resiter form  */
