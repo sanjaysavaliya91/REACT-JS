@@ -1,0 +1,12 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import AdminLogin from './AdminLogin';
+import AdminManu from './AdminMenu';
+import AdminCategory from './AdminCategory';
+import AdminUsers from './AdminUsers';
+import AdminProduct from './AdminProduct';
+import AdminOrders from './AdminOrders';
+import AdminInsertCategory from './AdminInsertCategory';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<AdminInsertCategory />);
