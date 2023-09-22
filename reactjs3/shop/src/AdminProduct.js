@@ -2,6 +2,7 @@ import React from 'react'
 import AdminMenu from './AdminMenu'
 import { useEffect , useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 export default function AdminProduct() {
     var [product, setProduct] = useState([]);
     let DisplayProduct = function(item){
@@ -67,7 +68,7 @@ export default function AdminProduct() {
     <div className="col-12">
       <div className="h1 border-bottom pb-2 mb-2">Product Management</div>
       <p className="text-end">
-        <a href="insert_product.html" className="btn btn-primary">Add Product</a>
+        <Link to="/AdminInsertProduct" className="btn btn-primary">Add Product</Link>
       </p>
       <div className="card">
         <div className="card-header text-bg-primary">

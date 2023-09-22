@@ -1,6 +1,7 @@
 import React from 'react'
 import AdminManu from './AdminMenu';
 import axios from 'axios'
+import { Link } from 'react-router-dom';
 class AdminCategory extends React.Component {
     DisplayCategory = function (item) {
         return (<tr>
@@ -65,7 +66,7 @@ class AdminCategory extends React.Component {
     <div className="col-12">
       <div className="h1 border-bottom pb-2 mb-2">Category Management</div>
       <p className="text-end">
-        <a href="insert_category.html" className="btn btn-primary">Add Category</a>
+        <Link to="/AdminInsertCategory" className="btn btn-primary">Add Category</Link>
       </p>
       <div className="card">
         <div className="card-header text-bg-primary">
