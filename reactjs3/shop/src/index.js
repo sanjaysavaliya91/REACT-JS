@@ -17,14 +17,14 @@ function MyRouter(){
     return (
         <BrowserRouter>
         <Routes>
-            <Route index element={<AdminHome />} />
+            <Route index element={<AdminLogin />} />
             <Route path='/AdminCategory' element={<AdminCategory />} />
             <Route path='/AdminProduct' element={<AdminProduct />} />
             <Route path='/AdminUsers' element={<AdminUsers />} />
             <Route path='/AdminOrders' element={<AdminOrders />} />
             <Route path='/AdminInsertCategory' element={<AdminInsertCategory />} />
             <Route path='/AdminInsertProduct' element={<AdminInsertProduct />} />
-            <Route path='/AdminLogin' element={<AdminLogin   />} />
+            <Route path='/AdminHome' element={<AdminHome   />} />
             {/* <Route path='*' element={<NoPage />} /> */}
         </Routes>
         </BrowserRouter>
