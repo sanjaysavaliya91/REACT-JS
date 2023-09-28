@@ -1,8 +1,10 @@
 import AdminMenu from "./AdminMenu";
+import IsLogin from "./AdminWithLogin";
 
 export default function AdminHome() {
     return (
         <>  
+        <IsLogin />
         <AdminMenu />
             <div className="container">
                 <div className="row mt-5">

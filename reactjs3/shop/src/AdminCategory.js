@@ -2,6 +2,8 @@ import React from 'react'
 import AdminManu from './AdminMenu';
 import axios from 'axios'
 import { Link } from 'react-router-dom';
+import IsLogin2 from 'AdminLoginClass1.js';
+
 class AdminCategory extends React.Component {
     DisplayCategory = function (item) {
         return (<tr>
@@ -61,6 +63,7 @@ class AdminCategory extends React.Component {
         return(
         <>
         <AdminManu />
+        <IsLogin2 />
         <div className="container">
   <div className="row mt-5">
     <div className="col-12">

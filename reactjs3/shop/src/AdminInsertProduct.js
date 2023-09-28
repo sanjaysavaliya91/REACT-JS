@@ -2,7 +2,7 @@ import AdminMenu from "./AdminMenu";
 import React from 'react'
 import {useState , useEffect} from 'react';
 import axios from "axios";
-
+import IsLogin from "./AdminWithLogin";
 
 export default function AdminInsertProduct(){
     let [title , setTitle] = useState();
@@ -78,6 +78,7 @@ export default function AdminInsertProduct(){
     return (
         <>
             <AdminMenu />
+            <IsLogin />
             <div className="container">
                 <div className="row mt-5">
                     <div className="col-12">

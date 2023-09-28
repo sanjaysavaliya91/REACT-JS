@@ -6,7 +6,7 @@ function AdminLogin()
     //state variables 
     let [email,setEmail] = useState();
     let [password,setPassword] = useState();
-    const [cookies ,setCookie] = useCookies(['userid'])
+    const [cookies ,setCookie] = useCookies(['user'])
 
     let ConfirmLogin = function(event) {
       var apiAddress = 'http://theeasylearnacademy.com/shop/ws/login.php';

@@ -10,7 +10,7 @@ export default function AdminMenu()
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+            <Link className="nav-link" to="/AdminHome">Home</Link>
             <Link className="nav-link" to="/AdminCategory">Categories</Link>
             <Link className="nav-link" to="/AdminProduct">Products</Link>
             <Link className="nav-link" to="/AdminUsers">Customers</Link>

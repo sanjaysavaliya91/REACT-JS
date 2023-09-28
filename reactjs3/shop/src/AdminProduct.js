@@ -3,6 +3,9 @@ import AdminMenu from './AdminMenu'
 import { useEffect , useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import IsLogin from './AdminWithLogin';
+
+
 export default function AdminProduct() {
     var [product, setProduct] = useState([]);
     let DisplayProduct = function(item){
@@ -63,6 +66,7 @@ export default function AdminProduct() {
     return (
         <>
             <AdminMenu />
+            <IsLogin />
             <div className="container">
   <div className="row mt-5">
     <div className="col-12">

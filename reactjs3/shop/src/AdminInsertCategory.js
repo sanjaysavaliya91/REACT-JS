@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import AdminMenu from './AdminMenu';
+import IsLogin from './AdminWithLogin';
 
 
 export default function AdminInsertCategory() {
@@ -34,6 +35,7 @@ export default function AdminInsertCategory() {
     return (
         <>
         <AdminMenu />
+        <IsLogin />
             <div className="container">
                 <div className="row mt-5">
                     <div className="col-12">

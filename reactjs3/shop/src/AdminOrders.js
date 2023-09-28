@@ -2,6 +2,7 @@ import React from 'react'
 import AdminMenu from './AdminMenu';
 import { useEffect, useState } from 'react'
 import axios from 'axios';
+import IsLogin from './AdminWithLogin';
 
 export default function AdminOrders() {
     var [orders, setOrders] = useState([]); 
@@ -59,6 +60,7 @@ export default function AdminOrders() {
     return (
         <>
             <AdminMenu />
+            <IsLogin />
             <div className="container">
                 <div className="row mt-5">
                     <div className="col-12">
