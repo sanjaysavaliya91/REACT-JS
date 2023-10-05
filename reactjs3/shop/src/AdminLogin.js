@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useCookies } from 'react-cookie';
+
 function AdminLogin()
 {
     //state variables 
@@ -31,6 +32,7 @@ function AdminLogin()
             }
             else if(data[1]['success'] == 'yes'){
               setCookie('userid',data[3]['id'], { path: '/' });
+              alert(data[2]['message']);
              window.location = '/AdminHome';
             }
             

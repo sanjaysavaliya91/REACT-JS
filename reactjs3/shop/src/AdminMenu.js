@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 export default function AdminMenu()
 {
     return (
@@ -15,6 +16,7 @@ export default function AdminMenu()
             <Link className="nav-link" to="/AdminProduct">Products</Link>
             <Link className="nav-link" to="/AdminUsers">Customers</Link>
             <Link className="nav-link" to="/AdminOrders">Orders</Link>
+            <Link className="nav-link" to="/AdminLogout">Logout</Link>
           </div>
         </div>
       </div>

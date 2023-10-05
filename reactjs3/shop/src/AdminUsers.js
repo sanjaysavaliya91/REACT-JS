@@ -1,8 +1,10 @@
 import React from 'react'
 import AdminMenu from './AdminMenu'
 import axios from 'axios'
+import {AdminWithLogin2} from './AdminWithLogin2';
+import { withCookies } from 'react-cookie';
 
-class AdminUsers extends React.Component {
+class AdminUsers extends AdminWithLogin2 {
     constructor(props) {
         super(props)
         this.state = {
@@ -81,4 +83,4 @@ class AdminUsers extends React.Component {
         )
     }
 }
-export default AdminUsers
+export default withCookies(AdminUsers)

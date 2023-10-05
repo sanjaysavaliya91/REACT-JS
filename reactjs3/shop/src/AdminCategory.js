@@ -2,9 +2,12 @@ import React from 'react'
 import AdminManu from './AdminMenu';
 import axios from 'axios'
 import { Link } from 'react-router-dom';
-import IsLogin2 from 'AdminLoginClass1.js';
+import {AdminWithLogin2} from './AdminWithLogin2';
+import { withCookies } from 'react-cookie';
 
-class AdminCategory extends React.Component {
+
+
+class AdminCategory extends AdminWithLogin2 {
     DisplayCategory = function (item) {
         return (<tr>
           <td>{item.id}</td>
@@ -16,7 +19,7 @@ class AdminCategory extends React.Component {
             Yes
           </td>
           <td>
-            <a href="edit-category.html"><i className="fa fa-pencil fa-2x" /></a>
+            <Link to={"/AdminEditCategory/" + item.id}><i className="fa fa-pencil fa-2x" /></Link>
           </td>
           <td>
             <a href="#"><i className="fa fa-trash fa-2x" /></a>
@@ -33,7 +36,6 @@ class AdminCategory extends React.Component {
 {
   let ApiAddress = "http://theeasylearnacademy.com/shop/ws/category.php";
     let contex = this;
-  let context = this;
   axios({
     method : 'get',
     url : ApiAddress,
@@ -63,13 +65,12 @@ class AdminCategory extends React.Component {
         return(
         <>
         <AdminManu />
-        <IsLogin2 />
         <div className="container">
   <div className="row mt-5">
     <div className="col-12">
       <div className="h1 border-bottom pb-2 mb-2">Category Management</div>
       <p className="text-end">
-        <Link to="/AdminInsertCategory" className="btn btn-primary">Add Category</Link>
+        <a href="/AdminInsertCategory" className="btn btn-primary">Add Category</a>
       </p>
       <div className="card">
         <div className="card-header text-bg-primary">
@@ -96,4 +97,4 @@ class AdminCategory extends React.Component {
         </>)
     }
 }
-export default AdminCategory
+export default withCookies(AdminCategory)
