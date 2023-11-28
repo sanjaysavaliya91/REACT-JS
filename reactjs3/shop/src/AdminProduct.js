@@ -13,7 +13,7 @@ export default function AdminProduct() {
             <tr>
                 <td>{item.id} <br />
                   <a href="#"><i className="fa fa-trash fa-2x" /></a>
-                  <a href="edit-product.html"><i className="fa fa-pencil fa-2x" /></a>
+                  <a href={"/AdminEditProduct/" + item.id}><i className="fa fa-pencil fa-2x" /></a>
                 </td>
                 <td>{item.categoryid}</td>
                 <td>{item.categorytitle}</td> 
@@ -99,5 +99,6 @@ export default function AdminProduct() {
 
 
         </>
-    )
+    );
 }
+
