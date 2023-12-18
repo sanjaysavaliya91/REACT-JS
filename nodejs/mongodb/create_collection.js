@@ -19,7 +19,7 @@ async function run() {
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
     let database = client.db('frontend18')
-    await database.createCollection('personal').then(function(error,response){
+    await database.createCollection('register').then(function(error,response){
       if(error == true)
       {
         console.log(error);

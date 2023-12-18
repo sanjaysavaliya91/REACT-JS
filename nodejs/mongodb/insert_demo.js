@@ -20,13 +20,12 @@ async function run() {
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
         let database = client.db('frontend18');
         let data = {
-            'name' : 'sanjay savaliya',
-            'age' : 33,
-            'mobile' : '9638118788',
-            'study' : 'Nodejs'
+            'caurse' : 'bootstrep',
+            'fees' : 5000,
+            'time' : '17:00',
         }
 
-       await database.collection('student').insertOne(data).then(function(error,response){
+       await database.collection('caurse').insertOne(data).then(function(error,response){
             if(error == true)
             console.log(error);
         else
