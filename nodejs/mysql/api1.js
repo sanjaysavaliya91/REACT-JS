@@ -1,4 +1,4 @@
-var con = require("./connection"); 
+var con = require("./connection");
 var express = require('express');
 var app = express();
 
@@ -23,5 +23,24 @@ app.get('/student', function (request, response) {
         }
     });
 })
+
+app.get("student/:id", function (request, response) {
+    var sql = "select * from student2 where id = " + request.params.id;
+    console.log(sql);
+    con.connection.query(sql, function (error, result, fields) {
+        if (error == true) {
+            response.json({ "error": "yes" })
+        }
+        else {
+            let json_data = JSON.parse(json.stringify(result));
+            data = [
+                { 'error': 'no' },
+                { 'success': 'yes' },
+                { 'data': json_data }
+            ]
+            response.json(data);
+        }
+    });
+});
 app.listen(5000);
 console.log("Server is Ready.....");
