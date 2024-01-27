@@ -9,7 +9,6 @@ app.use(express.urlencoded({ 'extended': false }));
 app.post('/register_email', function (request, response) {
      let email = request.body.email;
      let password = request.body.password;
-    //  console.log(`The value of name is ${name} dob is ${dob} email is ${email} contact is ${contact} gender is ${gender}`);
     let sql = `insert into register (email,password) values ('${email}','${password}')`;
     console.log(sql);
     con.connection.query(sql,function(error,result){
@@ -24,7 +23,7 @@ app.post('/register_email', function (request, response) {
                 {'message':'Data Inserted Successfully'},
             ]
 
-            response.json(data);
+            response.json(JSON.parse(JSON.stringify(data)));
         }
     });
      
