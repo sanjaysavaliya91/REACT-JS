@@ -10,7 +10,7 @@ function AdminLogin()
     const [cookies ,setCookie] = useCookies(['user'])
 
     let ConfirmLogin = function(event) {
-      var apiAddress = 'http://theeasylearnacademy.com/shop/ws/login.php';
+      var apiAddress = 'https://theeasylearnacademy.com/shop/ws/login.php';
       var formData = new FormData();
       formData.append("email",email);
       formData.append("password",password);
